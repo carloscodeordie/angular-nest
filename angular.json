@@ -7,6 +7,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "shared": "libs/shared",
+    "store": "libs/store",
     "user-management": "libs/user-management"
   }
 }

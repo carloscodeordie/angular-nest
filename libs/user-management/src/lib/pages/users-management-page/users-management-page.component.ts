@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngxs/store';
 
 import { User } from '@code-or-die/shared';
+import { GetUsersAction } from '@code-or-die/store';
 
 @Component({
   selector: 'code-or-die-users-management-page',
@@ -10,18 +12,13 @@ import { User } from '@code-or-die/shared';
 export class UsersManagementPageComponent implements OnInit {
   users: User[];
 
-  constructor() {
-    this.users = [
-      {
-        id: 1,
-        name: 'Carlos Macias',
-        age: 37,
-        role: 'admin',
-      },
-    ];
+  constructor(private store: Store) {
+    this.users = [];
   }
 
   ngOnInit(): void {
-    console.log('Page');
+    this.store.dispatch(new GetUsersAction()).subscribe((result) => {
+      this.users = result.users_store.users;
+    });
   }
 }
