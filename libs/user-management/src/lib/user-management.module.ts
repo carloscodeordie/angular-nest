@@ -8,11 +8,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { MenuComponent } from './components/menu/menu.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
-import {
-  UserDetailsComponent,
-  UserDetailsDialogComponent,
-} from './components/user-details/user-details.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { UsersManagementPageComponent } from './pages/users-management-page/users-management-page.component';
+import { UserDetailsDialogComponent } from './components/user-details/dialog/user-details-dialog.component';
 
 @NgModule({
   imports: [
