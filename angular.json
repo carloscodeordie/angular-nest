@@ -5,6 +5,7 @@
     "angular-nest": "apps/angular-nest",
     "angular-nest-e2e": "apps/angular-nest-e2e",
     "api": "apps/api",
-    "api-interfaces": "libs/api-interfaces"
+    "api-interfaces": "libs/api-interfaces",
+    "user-management": "libs/user-management"
   }
 }
