@@ -1,3 +1,6 @@
-export interface Message {
-  message: string;
+export interface User {
+  id: number;
+  name: string;
+  age: number;
+  role: string;
 }

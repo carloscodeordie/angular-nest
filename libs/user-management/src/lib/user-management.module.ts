@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { MenuComponent } from './components/menu/menu.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
@@ -19,6 +20,7 @@ import { UserDetailsDialogComponent } from './components/user-details/dialog/use
     MatGridListModule,
     MatTableModule,
     MatDialogModule,
+    MatPaginatorModule,
   ],
   declarations: [
     MenuComponent,

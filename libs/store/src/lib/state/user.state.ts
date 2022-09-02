@@ -24,9 +24,9 @@ export class UserState {
   constructor(private userService: UsersService) {}
 
   @Action(GetUsersAction)
-  getUsers(ctx: StateContext<UserStateModel>): void {
+  async getUsers(ctx: StateContext<UserStateModel>): Promise<void> {
     const state = ctx.getState();
-    const users: User[] = this.userService.getUsers();
+    const users: User[] = await this.userService.getUsers();
     ctx.setState({
       ...state,
       users,
