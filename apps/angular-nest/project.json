@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/angular-nest",
         "index": "apps/angular-nest/src/index.html",
@@ -17,7 +19,10 @@
           "apps/angular-nest/src/favicon.ico",
           "apps/angular-nest/src/assets"
         ],
-        "styles": ["apps/angular-nest/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+          "apps/angular-nest/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -85,7 +90,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/angular-nest"],
+      "outputs": [
+        "coverage/apps/angular-nest"
+      ],
       "options": {
         "jestConfig": "apps/angular-nest/jest.config.ts",
         "passWithNoTests": true
