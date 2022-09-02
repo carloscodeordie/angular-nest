@@ -1,9 +1,3 @@
 <code-or-die-menu title="ANGULAR NEST APPLICATION"></code-or-die-menu>
-<mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile>
-        <code-or-die-users-table></code-or-die-users-table>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <code-or-die-user-details></code-or-die-user-details>
-    </mat-grid-tile>
-  </mat-grid-list>
+<code-or-die-users-table [users]="users"></code-or-die-users-table>
+<code-or-die-user-details></code-or-die-user-details>
